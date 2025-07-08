@@ -1,0 +1,9 @@
+services:
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: "multitenant"
+      POSTGRES_USER: "multitenant"
+    image: postgres:16
+    restart: always
+    ports:
+      - "5432:5432"
